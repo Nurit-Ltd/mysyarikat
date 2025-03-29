@@ -648,6 +648,42 @@ video {
   top: 600px;
 }
 
+.left-\[-40px\]{
+  left: -40px;
+}
+
+.left-\[-46px\]{
+  left: -46px;
+}
+
+.left-\[46px\]{
+  left: 46px;
+}
+
+.left-\[-66px\]{
+  left: -66px;
+}
+
+.left-\[-70px\]{
+  left: -70px;
+}
+
+.left-\[-110px\]{
+  left: -110px;
+}
+
+.left-\[-130px\]{
+  left: -130px;
+}
+
+.left-\[-140px\]{
+  left: -140px;
+}
+
+.left-\[-150px\]{
+  left: -150px;
+}
+
 .z-30{
   z-index: 30;
 }
@@ -1154,6 +1190,14 @@ video {
 
 .pb-14{
   padding-bottom: 3.5rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .text-\[10px\]{
