@@ -6,6 +6,7 @@
       colors: {
         primary: "#05285E",
         // secondary: "#FACC15", 
+        neutral_600:"#9E9E9E"
       },
     },
   },
