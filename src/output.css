@@ -576,6 +576,14 @@ video {
   display: grid;
 }
 
+.h-\[24px\]{
+  height: 24px;
+}
+
+.w-\[1px\]{
+  width: 1px;
+}
+
 .grid-cols-10{
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
@@ -617,6 +625,11 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-neutral_600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(158 158 158 / var(--tw-bg-opacity, 1));
 }
 
 .p-8{
