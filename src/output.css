@@ -612,6 +612,42 @@ video {
   inset-inline-start: -6px;
 }
 
+.left-\[148px\]{
+  left: 148px;
+}
+
+.top-\[800px\]{
+  top: 800px;
+}
+
+.top-\[500px\]{
+  top: 500px;
+}
+
+.left-\[-154px\]{
+  left: -154px;
+}
+
+.top-\[300px\]{
+  top: 300px;
+}
+
+.top-\[200px\]{
+  top: 200px;
+}
+
+.top-\[150px\]{
+  top: 150px;
+}
+
+.left-\[-48px\]{
+  left: -48px;
+}
+
+.top-\[600px\]{
+  top: 600px;
+}
+
 .z-30{
   z-index: 30;
 }
@@ -622,6 +658,18 @@ video {
 
 .z-10{
   z-index: 10;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-50{
+  z-index: 50;
+}
+
+.z-0{
+  z-index: 0;
 }
 
 .col-span-2{

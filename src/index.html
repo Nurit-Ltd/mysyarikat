@@ -8,7 +8,7 @@
   <body>
     <div>
       <nav
-        class="fixed top-0 left-0 right-0 w-full h-[65px] md:h-[70px] bg-white lg:hidden flex items-center justify-between px-4 md:px-8 z-30 shadow-lg"
+        class="w-full h-[65px] md:h-[70px] bg-white lg:hidden flex items-center justify-between px-4 md:px-8 z-40 shadow-lg"
       >
         <a href="#">
           <img src="/public/logo.svg" alt="logo" class="h-6 md:h-7" />
@@ -82,9 +82,9 @@
         class="fixed inset-0 bg-black bg-opacity-50 hidden z-30"
       ></div>
 
-      <div class="px-4 lg:px-8">
+      <div class="px-4 lg:px-8 relative">
         <div class="grid lg:grid-cols-10 gap-5 pt-4 2xl:pr-4 pb-14 2xl:pl-6">
-          <aside class="lg:col-span-2 hidden lg:block">
+          <aside class="lg:col-span-2 hidden lg:block z-10">
             <div class="pt-8 xl:pt-12 xl:pl-8">
               <a href="#">
                 <img src="/public/logo.svg" alt="logo" />
@@ -126,9 +126,7 @@
               </li>
             </ul>
           </aside>
-          <div
-            class="lg:col-span-8 bg-white rounded-3xl p-4 2xl:p-8 mt-[65px] md:mt-[70px] lg:mt-0"
-          >
+          <div class="lg:col-span-8 bg-white rounded-3xl p-4 2xl:p-8 z-10">
             <main>
               <div
                 class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-0"
@@ -187,121 +185,6 @@
                       class="w-6 h-6 xl:w-auto xl:h-auto"
                     />
                   </button>
-                </div>
-                <!-- Right Side User Modal -->
-                <div
-                  id="user-modal"
-                  class="fixed top-0 right-0 h-full w-0 bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden z-40"
-                >
-                  <div class="relative h-full">
-                    <!-- modal top -->
-
-                    <a
-                      id="close-user-btn"
-                      class="absolute top-[26px] left-4 sm:left-6 flex items-center justify-between cursor-pointer"
-                      href="#"
-                    >
-                      <img
-                        src="/public/arrow-left-modal.svg"
-                        alt="arrow-left"
-                      />
-                    </a>
-                    <div class="px-4 sm:px-6 pt-[26px]">
-                      <div class="flex items-center justify-center">
-                        <p
-                          class="text-base sm:text-lg font-semibold bg-gradient-to-r to-[#05285E] from-[#1BBABC] bg-clip-text text-transparent"
-                        >
-                          App
-                        </p>
-                      </div>
-                      <div class="mt-5 xl:mt-11">
-                        <p
-                          class="text-sm sm:text-base font-medium text-neutral_700"
-                        >
-                          Hi Alif Azuwan, your apps are listed here.
-                        </p>
-                        <div class="space-y-2 md:space-y-4 mt-6">
-                          <div
-                            class="py-1.5 sm:py-2.5 px-2 sm:px-4 rounded-lg flex items-center gap-2 sm:gap-4 bg-white"
-                          >
-                            <div
-                              class="w-12 h-12 sm:w-20 sm:h-20 border border-neutral_300 rounded-lg flex items-center justify-center"
-                            >
-                              <img
-                                src="/public/logo-icon.svg"
-                                alt="logo-icon"
-                                class="w-6 h-6 sm:w-auto sm:h-auto"
-                              />
-                            </div>
-                            <div class="space-y-1">
-                              <p
-                                class="text-sm sm:text-base font-medium text-neutral_700"
-                              >
-                                MySyarikat Human Resourse
-                              </p>
-                              <p class="text-xs sm:text-sm text-neutral_600">
-                                Manage report and approval
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="py-1.5 sm:py-2.5 px-2 sm:px-4 rounded-lg flex items-center gap-2 sm:gap-4 bg-[#1ECFCA26]"
-                          >
-                            <div
-                              class="w-12 h-12 sm:w-20 sm:h-20 border border-primary rounded-lg flex items-center justify-center"
-                            >
-                              <img
-                                src="/public/logo-icon.svg"
-                                alt="logo-icon"
-                                class="w-6 h-6 sm:w-auto sm:h-auto"
-                              />
-                            </div>
-                            <div class="space-y-1">
-                              <p
-                                class="text-sm sm:text-base font-semibold text-primary"
-                              >
-                                MySyarikat - KPI
-                              </p>
-                              <p class="text-xs sm:text-sm text-neutral_700">
-                                Manage performance and goals
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="py-1.5 sm:py-2.5 px-2 sm:px-4 rounded-lg flex items-center gap-2 sm:gap-4 bg-white"
-                          >
-                            <div
-                              class="w-12 h-12 sm:w-20 sm:h-20 border border-neutral_300 rounded-lg flex items-center justify-center"
-                            >
-                              <img
-                                src="/public/portal.svg"
-                                alt="portal-icon"
-                                class="w-6 h-6 sm:w-auto sm:h-auto"
-                              />
-                            </div>
-                            <div class="space-y-1">
-                              <p
-                                class="text-sm sm:text-base font-medium text-neutral_700"
-                              >
-                                MySyarikat Job Portal
-                              </p>
-                              <p class="text-xs sm:text-sm text-neutral_600">
-                                Manage candidates and job posting
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="absolute bottom-0 left-[-20px] hidden xl:block">
-                      <img
-                        src="/public/bg-for-user-modal.svg"
-                        alt="bg-for-user-modal"
-                        class="h-[200px] 2xl:h-auto"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
               <div
@@ -893,7 +776,127 @@
               </div>
             </main>
           </div>
+          <!-- Right Side User Modal -->
+          <div
+            id="user-modal"
+            class="fixed top-0 right-0 h-full w-0 bg-white shadow-lg transition-all duration-300 ease-in-out overflow-hidden z-40"
+          >
+            <div class="relative h-full">
+              <!-- modal top -->
+
+              <a
+                id="close-user-btn"
+                class="absolute top-[26px] left-4 sm:left-6 flex items-center justify-between cursor-pointer"
+                href="#"
+              >
+                <img src="/public/arrow-left-modal.svg" alt="arrow-left" />
+              </a>
+              <div class="px-4 sm:px-6 pt-[26px]">
+                <div class="flex items-center justify-center">
+                  <p
+                    class="text-base sm:text-lg font-semibold bg-gradient-to-r to-[#05285E] from-[#1BBABC] bg-clip-text text-transparent"
+                  >
+                    App
+                  </p>
+                </div>
+                <div class="mt-5 xl:mt-11">
+                  <p class="text-sm sm:text-base font-medium text-neutral_700">
+                    Hi Alif Azuwan, your apps are listed here.
+                  </p>
+                  <div class="space-y-2 md:space-y-4 mt-6">
+                    <div
+                      class="py-1.5 sm:py-2.5 px-2 sm:px-4 rounded-lg flex items-center gap-2 sm:gap-4 bg-white"
+                    >
+                      <div
+                        class="w-12 h-12 sm:w-20 sm:h-20 border border-neutral_300 rounded-lg flex items-center justify-center"
+                      >
+                        <img
+                          src="/public/logo-icon.svg"
+                          alt="logo-icon"
+                          class="w-6 h-6 sm:w-auto sm:h-auto"
+                        />
+                      </div>
+                      <div class="space-y-1">
+                        <p
+                          class="text-sm sm:text-base font-medium text-neutral_700"
+                        >
+                          MySyarikat Human Resourse
+                        </p>
+                        <p class="text-xs sm:text-sm text-neutral_600">
+                          Manage report and approval
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="py-1.5 sm:py-2.5 px-2 sm:px-4 rounded-lg flex items-center gap-2 sm:gap-4 bg-[#1ECFCA26]"
+                    >
+                      <div
+                        class="w-12 h-12 sm:w-20 sm:h-20 border border-primary rounded-lg flex items-center justify-center"
+                      >
+                        <img
+                          src="/public/logo-icon.svg"
+                          alt="logo-icon"
+                          class="w-6 h-6 sm:w-auto sm:h-auto"
+                        />
+                      </div>
+                      <div class="space-y-1">
+                        <p
+                          class="text-sm sm:text-base font-semibold text-primary"
+                        >
+                          MySyarikat - KPI
+                        </p>
+                        <p class="text-xs sm:text-sm text-neutral_700">
+                          Manage performance and goals
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="py-1.5 sm:py-2.5 px-2 sm:px-4 rounded-lg flex items-center gap-2 sm:gap-4 bg-white"
+                    >
+                      <div
+                        class="w-12 h-12 sm:w-20 sm:h-20 border border-neutral_300 rounded-lg flex items-center justify-center"
+                      >
+                        <img
+                          src="/public/portal.svg"
+                          alt="portal-icon"
+                          class="w-6 h-6 sm:w-auto sm:h-auto"
+                        />
+                      </div>
+                      <div class="space-y-1">
+                        <p
+                          class="text-sm sm:text-base font-medium text-neutral_700"
+                        >
+                          MySyarikat Job Portal
+                        </p>
+                        <p class="text-xs sm:text-sm text-neutral_600">
+                          Manage candidates and job posting
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="absolute bottom-0 left-[-20px] hidden xl:block">
+                <img
+                  src="/public/bg-for-user-modal.svg"
+                  alt="bg-for-user-modal"
+                  class="h-[200px] 2xl:h-auto"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="absolute left-[148px] top-[500px] hidden xl:block z-0">
+        <img src="/public/shadow-blue-big.svg" alt="shadow-blue" />
+      </div>
+      <div class="absolute left-[-48px] top-[600px] hidden xl:block z-0">
+        <img src="/public/shadow-blue-sm.svg" alt="shadow-blue" />
+      </div>
+      <div class="absolute left-[-154px] top-[150px] hidden xl:block z-0">
+        <img src="/public/shadow-primary-big.svg" alt="shadow-blue" />
       </div>
     </div>
     <script src="../js/main.js"></script>
