@@ -6,178 +6,201 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="px-4 lg:px-8">
-      <div class="grid lg:grid-cols-10 gap-5 pt-4 2xl:pr-4 2xl:pb-4 2xl:pl-6">
-        <aside class="lg:col-span-2 hidden lg:block">
-          <div class="pt-12 pl-8">
-            <a href="#">
-              <img src="/public/logo.svg" alt="logo" />
-            </a>
-          </div>
-          <ul class="mt-[50px] space-y-1">
-            <li>
-              <a href="#" class="menu-list">
-                <img src="/public/dashboard-icon.svg" alt="dashboard-icon" />
-                Dashboard
+    <div>
+      <nav
+        class="w-full h-[70px] bg-white lg:hidden flex items-center justify-between px-4 md:px-8"
+      >
+        <a href="#">
+          <img src="/public/logo.svg" alt="logo" class="h-7" />
+        </a>
+        <button>
+          <img src="/public/menu-bar.svg" alt="menu" class="w-8 h-8" />
+        </button>
+      </nav>
+
+      <div class="px-4 lg:px-8">
+        <div class="grid lg:grid-cols-10 gap-5 pt-4 2xl:pr-4 2xl:pb-4 2xl:pl-6">
+          <aside class="lg:col-span-2 hidden lg:block">
+            <div class="pt-12 pl-8">
+              <a href="#">
+                <img src="/public/logo.svg" alt="logo" />
               </a>
-            </li>
-            <li>
-              <a href="#" class="menu-list">
-                <img src="/public/performance.svg" alt="performance-icon" />
-                Performance
-              </a>
-            </li>
-            <li>
-              <a href="#" class="menu-list justify-between">
-                <div class="flex items-center gap-4">
-                  <img src="/public/review.svg" alt="review-icon" />
-                  Review
-                </div>
-                <img src="/public/arrow-down.svg" alt="arrow-icon" />
-              </a>
-            </li>
-            <li>
-              <a href="#" class="menu-list-active list-shadow">
-                <img src="/public/goal.svg" alt="Goals-icon" />
-                Goals
-              </a>
-            </li>
-            <li>
-              <a href="#" class="menu-list">
-                <img src="/public/report.svg" alt="Goals-icon" />
-                Report
-              </a>
-            </li>
-          </ul>
-        </aside>
-        <main class="lg:col-span-8 bg-white rounded-3xl p-4 2xl:p-8">
-          <div
-            class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-0"
-          >
-            <div class="space-y-1">
-              <a href="#" class="flex items-center gap-2 xl:gap-6">
-                <img src="/public/arrow-left.svg" alt="arrow-lefts" />
-                <span class="text-lg xl:text-2xl font-semibold"
-                  >Goal Details</span
-                >
-              </a>
-              <div class="flex items-center gap-2 xl:gap-3">
-                <a href="#" class="text-sm text-neutral_600">Home</a>
-                <img src="/public/arrow-right.svg" alt="arrow-right" class="" />
-                <a href="#" class="text-sm text-neutral_600">Goals</a>
-                <img src="/public/arrow-right.svg" alt="arrow-right" />
-                <a href="#" class="text-sm text-neutral_600">Goals Details</a>
-              </div>
             </div>
-            <div class="flex items-center gap-3 xl:gap-6">
-              <a href="#" class="flex items-center gap-2 xl:gap-4">
-                <p class="text-neutral_600 text-xs xl:text-base">
-                  Byond Tech Global Berhad
-                </p>
-                <img
-                  src="/public/buildings.svg"
-                  alt="buildings"
-                  class="w-5 h-5 xl:w-auto xl:h-auto"
-                />
-              </a>
-              <button>
-                <img
-                  src="/public/notification.svg"
-                  alt="notification"
-                  class="w-5 h-5 xl:w-auto xl:h-auto"
-                />
-              </button>
-              <div class="w-[1px] h-[24px] bg-neutral_600"></div>
-              <button>
-                <img
-                  src="/public/grid-1.svg"
-                  alt="grid"
-                  class="w-5 h-5 xl:w-auto xl:h-auto"
-                />
-              </button>
-              <button>
-                <img
-                  src="/public/user.svg"
-                  alt="user"
-                  class="w-6 h-6 xl:w-auto xl:h-auto"
-                />
-              </button>
-            </div>
-          </div>
-          <div
-            class="p-3 sm:p-4 md:p-6 mt-8 bg-[#F8F8F8] rounded-lg md:rounded-2xl space-y-4"
-          >
-            <div class="flex items-center gap-1 sm:gap-2">
-              <h4 class="text-base sm:text-xl font-semibold">
-                Sales RM10,000 <span class="text-[#FFC700]">(40%)</span>
-              </h4>
+            <ul class="mt-[50px] space-y-1">
+              <li>
+                <a href="#" class="menu-list">
+                  <img src="/public/dashboard-icon.svg" alt="dashboard-icon" />
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu-list">
+                  <img src="/public/performance.svg" alt="performance-icon" />
+                  Performance
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu-list justify-between">
+                  <div class="flex items-center gap-4">
+                    <img src="/public/review.svg" alt="review-icon" />
+                    Review
+                  </div>
+                  <img src="/public/arrow-down.svg" alt="arrow-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu-list-active list-shadow">
+                  <img src="/public/goal.svg" alt="Goals-icon" />
+                  Goals
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu-list">
+                  <img src="/public/report.svg" alt="Goals-icon" />
+                  Report
+                </a>
+              </li>
+            </ul>
+          </aside>
+          <div class="lg:col-span-8 bg-white rounded-3xl p-4 2xl:p-8">
+            <main>
               <div
-                class="px-1.5 py-0.5 rounded-full bg-[#69696933] text-[10px] sm:text-sm font-medium text-neutral_700"
+                class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-0"
               >
-                Closed Goal
-              </div>
-            </div>
-            <div class="flex items-center gap-1 sm:gap-3">
-              <div class="flex items-center gap-0.5 sm:gap-2">
-                <img
-                  src="/public/individual.svg"
-                  alt="individual"
-                  class="w-4 h-4 sm:w-auto sm:h-auto"
-                />
-                <p class="text-xs sm:text-sm text-neutral_600">Individual</p>
-              </div>
-              <div class="w-2 h-2 rounded-full bg-neutral_600"></div>
-              <div class="flex items-center gap-0.5 sm:gap-2">
-                <img
-                  src="/public/calendar.svg"
-                  alt="calendar"
-                  class="w-4 h-4 sm:w-auto sm:h-auto"
-                />
-                <p class="text-xs sm:text-sm text-neutral_600">
-                  1st July 2024 - 14th July 2024
-                </p>
-              </div>
-            </div>
-            <p class="text-[10px] text-neutral_600">
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer
-            </p>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center gap-2">
-                <img src="/public/active-person.svg" alt="active-person" />
-                <p class="text-xs font-semibold text-neutral_600">
-                  Malik Hassan
-                </p>
-              </div>
-              <div class="w-[1px] h-6 bg-neutral_600"></div>
-              <div class="flex items-center gap-2">
-                <img src="/public/active-person.svg" alt="active-person" />
-                <p class="text-xs text-neutral_600">Malik Hassan</p>
-              </div>
-            </div>
-            <div class="space-y-2">
-              <p class="text-sm font-semibold">Goal Progress</p>
-              <div class="flex items-center justify-between">
-                <p class="text-sm text-neutral_700">RM10,000</p>
-                <div
-                  class="px-1.5 py-0.5 rounded-full bg-[#FFC70033] flex items-center justify-center"
-                >
-                  <p class="text-xs font-medium text-[#FFC700]">40%</p>
+                <div class="space-y-1">
+                  <a href="#" class="flex items-center gap-2 xl:gap-6">
+                    <img src="/public/arrow-left.svg" alt="arrow-lefts" />
+                    <span class="text-lg xl:text-2xl font-semibold"
+                      >Goal Details</span
+                    >
+                  </a>
+                  <div class="flex items-center gap-2 xl:gap-3">
+                    <a href="#" class="text-sm text-neutral_600">Home</a>
+                    <img
+                      src="/public/arrow-right.svg"
+                      alt="arrow-right"
+                      class=""
+                    />
+                    <a href="#" class="text-sm text-neutral_600">Goals</a>
+                    <img src="/public/arrow-right.svg" alt="arrow-right" />
+                    <a href="#" class="text-sm text-neutral_600"
+                      >Goals Details</a
+                    >
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 xl:gap-6">
+                  <a href="#" class="flex items-center gap-2 xl:gap-4">
+                    <p class="text-neutral_600 text-xs xl:text-base">
+                      Byond Tech Global Berhad
+                    </p>
+                    <img
+                      src="/public/buildings.svg"
+                      alt="buildings"
+                      class="w-5 h-5 xl:w-auto xl:h-auto"
+                    />
+                  </a>
+                  <button>
+                    <img
+                      src="/public/notification.svg"
+                      alt="notification"
+                      class="w-5 h-5 xl:w-auto xl:h-auto"
+                    />
+                  </button>
+                  <div class="w-[1px] h-[24px] bg-neutral_600"></div>
+                  <button>
+                    <img
+                      src="/public/grid-1.svg"
+                      alt="grid"
+                      class="w-5 h-5 xl:w-auto xl:h-auto"
+                    />
+                  </button>
+                  <button>
+                    <img
+                      src="/public/user.svg"
+                      alt="user"
+                      class="w-6 h-6 xl:w-auto xl:h-auto"
+                    />
+                  </button>
                 </div>
               </div>
-              <div class="w-full bg-neutral_300 rounded-full h-2.5">
-                <div
-                  class="bg-[#FFC700] h-2.5 rounded-full"
-                  style="width: 40%"
-                ></div>
+              <div
+                class="p-3 sm:p-4 md:p-6 mt-8 bg-[#F8F8F8] rounded-lg md:rounded-2xl space-y-4"
+              >
+                <div class="flex items-center gap-1 sm:gap-2">
+                  <h4 class="text-base sm:text-xl font-semibold">
+                    Sales RM10,000 <span class="text-[#FFC700]">(40%)</span>
+                  </h4>
+                  <div
+                    class="px-1.5 py-0.5 rounded-full bg-[#69696933] text-[10px] sm:text-sm font-medium text-neutral_700"
+                  >
+                    Closed Goal
+                  </div>
+                </div>
+                <div class="flex items-center gap-1 sm:gap-3">
+                  <div class="flex items-center gap-0.5 sm:gap-2">
+                    <img
+                      src="/public/individual.svg"
+                      alt="individual"
+                      class="w-4 h-4 sm:w-auto sm:h-auto"
+                    />
+                    <p class="text-xs sm:text-sm text-neutral_600">
+                      Individual
+                    </p>
+                  </div>
+                  <div class="w-2 h-2 rounded-full bg-neutral_600"></div>
+                  <div class="flex items-center gap-0.5 sm:gap-2">
+                    <img
+                      src="/public/calendar.svg"
+                      alt="calendar"
+                      class="w-4 h-4 sm:w-auto sm:h-auto"
+                    />
+                    <p class="text-xs sm:text-sm text-neutral_600">
+                      1st July 2024 - 14th July 2024
+                    </p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-neutral_600">
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s, when an unknown printer
+                </p>
+                <div class="flex items-center gap-2">
+                  <div class="flex items-center gap-2">
+                    <img src="/public/active-person.svg" alt="active-person" />
+                    <p class="text-xs font-semibold text-neutral_600">
+                      Malik Hassan
+                    </p>
+                  </div>
+                  <div class="w-[1px] h-6 bg-neutral_600"></div>
+                  <div class="flex items-center gap-2">
+                    <img src="/public/active-person.svg" alt="active-person" />
+                    <p class="text-xs text-neutral_600">Malik Hassan</p>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <p class="text-sm font-semibold">Goal Progress</p>
+                  <div class="flex items-center justify-between">
+                    <p class="text-sm text-neutral_700">RM10,000</p>
+                    <div
+                      class="px-1.5 py-0.5 rounded-full bg-[#FFC70033] flex items-center justify-center"
+                    >
+                      <p class="text-xs font-medium text-[#FFC700]">40%</p>
+                    </div>
+                  </div>
+                  <div class="w-full bg-neutral_300 rounded-full h-2.5">
+                    <div
+                      class="bg-[#FFC700] h-2.5 rounded-full"
+                      style="width: 40%"
+                    ></div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <p class="text-xs font-medium text-neutral_600">RM2,000</p>
+                    <p class="text-xs font-medium text-neutral_600">RM10,000</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center justify-between">
-                <p class="text-xs font-medium text-neutral_600">RM2,000</p>
-                <p class="text-xs font-medium text-neutral_600">RM10,000</p>
-              </div>
-            </div>
+            </main>
           </div>
-        </main>
+        </div>
       </div>
     </div>
   </body>
