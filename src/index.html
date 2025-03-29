@@ -6,9 +6,9 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="px-4 md:px-8">
-      <div class="grid grid-cols-10 gap-5 pt-4 pr-4 pb-4 pl-6">
-        <aside class="col-span-2">
+    <div class="px-4 lg:px-8">
+      <div class="grid lg:grid-cols-10 gap-5 pt-4 2xl:pr-4 2xl:pb-4 2xl:pl-6">
+        <aside class="lg:col-span-2 hidden lg:block">
           <div class="pt-12 pl-8">
             <a href="#">
               <img src="/public/logo.svg" alt="logo" />
@@ -50,37 +50,98 @@
             </li>
           </ul>
         </aside>
-        <main class="col-span-8 bg-white rounded-3xl p-8">
-          <div class="flex items-center justify-between">
+        <main class="lg:col-span-8 bg-white rounded-3xl p-4 2xl:p-8">
+          <div
+            class="flex flex-col sm:flex-row sm:items-center justify-between"
+          >
             <div class="space-y-1">
-              <a href="#" class="flex items-center gap-6">
+              <a href="#" class="flex items-center gap-2 xl:gap-6">
                 <img src="/public/arrow-left.svg" alt="arrow-lefts" />
-                <span class="text-2xl font-semibold">Goal Details</span>
+                <span class="text-lg xl:text-2xl font-semibold"
+                  >Goal Details</span
+                >
               </a>
-              <div class="flex items-center gap-3">
+              <div class="flex items-center gap-2 xl:gap-3">
                 <a href="#" class="text-sm text-neutral_600">Home</a>
-                <img src="/public/arrow-right.svg" alt="arrow-right" />
+                <img src="/public/arrow-right.svg" alt="arrow-right" class="" />
                 <a href="#" class="text-sm text-neutral_600">Goals</a>
                 <img src="/public/arrow-right.svg" alt="arrow-right" />
                 <a href="#" class="text-sm text-neutral_600">Goals Details</a>
               </div>
             </div>
-            <div class="flex items-center gap-6">
-              <a href="#" class="flex items-center gap-4">
-                <p class="text-neutral_600">Byond Tech Global Berhad</p>
-                <img src="/public/buildings.svg" alt="buildings" />
+            <div class="flex items-center gap-3 xl:gap-6">
+              <a href="#" class="flex items-center gap-2 xl:gap-4">
+                <p class="text-neutral_600 text-sm xl:text-base">
+                  Byond Tech Global Berhad
+                </p>
+                <img
+                  src="/public/buildings.svg"
+                  alt="buildings"
+                  class="w-5 h-5 xl:w-auto xl:h-auto"
+                />
               </a>
               <button>
-                <img src="/public/notification.svg" alt="notification" />
+                <img
+                  src="/public/notification.svg"
+                  alt="notification"
+                  class="w-5 h-5 xl:w-auto xl:h-auto"
+                />
               </button>
               <div class="w-[1px] h-[24px] bg-neutral_600"></div>
               <button>
-                <img src="/public/grid-1.svg" alt="grid" />
+                <img
+                  src="/public/grid-1.svg"
+                  alt="grid"
+                  class="w-5 h-5 xl:w-auto xl:h-auto"
+                />
               </button>
               <button>
-                <img src="/public/user.svg" alt="user" />
+                <img
+                  src="/public/user.svg"
+                  alt="user"
+                  class="w-6 h-6 xl:w-auto xl:h-auto"
+                />
               </button>
             </div>
+          </div>
+          <div
+            class="p-3 sm:p-4 md:p-6 mt-8 bg-[#F8F8F8] rounded-2xl space-y-3 md:space-y-4"
+          >
+            <div class="flex items-center gap-1 sm:gap-2">
+              <h4 class="text-base sm:text-xl font-semibold">
+                Sales RM10,000 <span class="text-[#FFC700]">(40%)</span>
+              </h4>
+              <div
+                class="px-1.5 py-0.5 rounded-full bg-[#69696933] text-[10px] sm:text-sm font-medium text-neutral_700"
+              >
+                Closed Goal
+              </div>
+            </div>
+            <div class="flex items-center gap-1 sm:gap-3">
+              <div class="flex items-center gap-0.5 sm:gap-2">
+                <img
+                  src="/public/individual.svg"
+                  alt="individual"
+                  class="w-4 h-4 sm:w-auto sm:h-auto"
+                />
+                <p class="text-xs sm:text-sm text-neutral_600">Individual</p>
+              </div>
+              <div class="w-2 h-2 rounded-full bg-neutral_600"></div>
+              <div class="flex items-center gap-0.5 sm:gap-2">
+                <img
+                  src="/public/calendar.svg"
+                  alt="calendar"
+                  class="w-4 h-4 sm:w-auto sm:h-auto"
+                />
+                <p class="text-xs sm:text-sm text-neutral_600">
+                  1st July 2024 - 14th July 2024
+                </p>
+              </div>
+            </div>
+            <p class="text-[10px] text-neutral_600">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer
+            </p>
           </div>
         </main>
       </div>
