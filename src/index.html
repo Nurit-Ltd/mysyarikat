@@ -8,7 +8,7 @@
   <body>
     <div>
       <nav
-        class="w-full h-[65px] md:h-[70px] bg-white lg:hidden flex items-center justify-between px-4 md:px-8"
+        class="fixed top-0 left-0 right-0 w-full h-[65px] md:h-[70px] bg-white lg:hidden flex items-center justify-between px-4 md:px-8 z-30 shadow-lg"
       >
         <a href="#">
           <img src="/public/logo.svg" alt="logo" class="h-6 md:h-7" />
@@ -126,7 +126,9 @@
               </li>
             </ul>
           </aside>
-          <div class="lg:col-span-8 bg-white rounded-3xl p-4 2xl:p-8">
+          <div
+            class="lg:col-span-8 bg-white rounded-3xl p-4 2xl:p-8 mt-[65px] md:mt-[70px] lg:mt-0"
+          >
             <main>
               <div
                 class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-0"
@@ -378,10 +380,10 @@
                 </div>
               </div>
 
-              <div class="grid lg:grid-cols-7 gap-4 mt-10">
+              <div class="grid lg:grid-cols-7 gap-4 mt-4">
                 <!-- Key Results -->
                 <div
-                  class="lg:col-span-5 rounded-2xl bg-bgPrimary p-3 md:px-6 md:pt-6 md:pb-7"
+                  class="lg:col-span-5 rounded-lg md:rounded-2xl bg-bgPrimary p-3 md:px-6 md:pt-6 md:pb-7"
                 >
                   <div class="key-results-header">
                     <h2
@@ -562,7 +564,7 @@
 
                 <!-- Goal History -->
                 <div
-                  class="lg:col-span-2 rounded-2xl bg-bgPrimary pt-6 pr-2 h-[280px] lg:h-[520px] flex flex-col"
+                  class="lg:col-span-2 rounded-lg md:rounded-2xl bg-bgPrimary pt-6 pr-2 h-[280px] lg:h-[540px] flex flex-col"
                 >
                   <h2
                     class="text-primary font-semibold text-base leading-normal pl-6 pb-6"

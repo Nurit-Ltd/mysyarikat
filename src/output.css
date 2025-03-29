@@ -672,6 +672,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-\[65px\]{
+  margin-top: 65px;
+}
+
 .flex{
   display: flex;
 }
@@ -1476,6 +1480,10 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:mt-\[70px\]{
+    margin-top: 70px;
+  }
+
   .md\:h-7{
     height: 1.75rem;
   }
@@ -1538,6 +1546,10 @@ body {
     grid-column: span 5 / span 5;
   }
 
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1548,6 +1560,14 @@ body {
 
   .lg\:h-\[520px\]{
     height: 520px;
+  }
+
+  .lg\:h-\[530px\]{
+    height: 530px;
+  }
+
+  .lg\:h-\[540px\]{
+    height: 540px;
   }
 
   .lg\:grid-cols-10{
