@@ -22,13 +22,18 @@ function closeMenu() {
 }
 
 function openUserModal() {
-  userModal.style.width = "510px";
+  userModal.classList.remove("user-modal-small", "user-modal-large");
+  if (window.innerWidth <= 640) {
+    userModal.classList.add("user-modal-small");
+  } else {
+    userModal.classList.add("user-modal-large");
+  }
   overlay.classList.remove("hidden");
   body.classList.add("no-scroll");
 }
 
 function closeUserModal() {
-  userModal.style.width = "0";
+  userModal.classList.remove("user-modal-small", "user-modal-large");
   overlay.classList.add("hidden");
   body.classList.remove("no-scroll");
 }

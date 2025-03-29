@@ -41,3 +41,26 @@ body {
 .menu-list-active {
   @apply h-11 px-4 py-2 flex items-center gap-4 font-semibold text-base text-primary rounded-lg bg-white;
 }
+
+.user-modal-large {
+  width: 510px;
+}
+.user-modal-small {
+  width: 90%;
+}
+
+.user-modal {
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .user-modal {
+    width: 90%;
+  }
+}
+
+@media (min-width: 640px) {
+  .user-modal {
+    width: 510px;
+  }
+}
