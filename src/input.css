@@ -24,6 +24,56 @@ body {
   color: #05285e;
 }
 
-.menu-list-shadow {
+.no-scroll {
+  overflow: hidden;
+}
+
+.list-shadow {
   box-shadow: 0px 1px 8px 0px #3e3e3e14;
+}
+.menu-list {
+  @apply h-11 px-4 py-2 flex items-center gap-4 text-base text-primary rounded-lg hover:bg-white hover:font-semibold duration-300;
+}
+.menu-list:hover {
+  box-shadow: 0px 1px 8px 0px #3e3e3e14;
+}
+
+.menu-list-active {
+  @apply h-11 px-4 py-2 flex items-center gap-4 font-semibold text-base text-primary rounded-lg bg-white;
+}
+
+.user-modal-large {
+  width: 510px;
+}
+.user-modal-small {
+  width: 90%;
+}
+
+.user-modal {
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .user-modal {
+    width: 90%;
+  }
+}
+
+@media (min-width: 640px) {
+  .user-modal {
+    width: 510px;
+  }
+}
+
+.goal-history {
+  &::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 3px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+    border-radius: 3px;
+  }
 }
