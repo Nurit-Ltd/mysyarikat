@@ -24,6 +24,10 @@ body {
   color: #05285e;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .list-shadow {
   box-shadow: 0px 1px 8px 0px #3e3e3e14;
 }

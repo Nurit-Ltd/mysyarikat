@@ -8,20 +8,84 @@
   <body>
     <div>
       <nav
-        class="w-full h-[70px] bg-white lg:hidden flex items-center justify-between px-4 md:px-8"
+        class="w-full h-[65px] md:h-[70px] bg-white lg:hidden flex items-center justify-between px-4 md:px-8"
       >
         <a href="#">
-          <img src="/public/logo.svg" alt="logo" class="h-7" />
+          <img src="/public/logo.svg" alt="logo" class="h-6 md:h-7" />
         </a>
-        <button>
-          <img src="/public/menu-bar.svg" alt="menu" class="w-8 h-8" />
+        <button id="menu-btn">
+          <img
+            src="/public/menu-bar.svg"
+            alt="menu"
+            class="w-6 h-6 md:w-8 md:h-8"
+          />
         </button>
+        <!-- Sidebar Menu -->
       </nav>
+      <div
+        id="sidebar-menu"
+        class="fixed top-0 left-0 h-screen w-0 bg-[#E6E9EF] shadow-lg transition-all duration-300 ease-in-out overflow-hidden z-40"
+      >
+        <div class="p-5">
+          <div class="flex items-center justify-between">
+            <a href="#">
+              <img src="/public/logo.svg" alt="logo" class="h-7" />
+            </a>
+            <button id="close-btn" class="absolute top-5 right-5">
+              <img src="/public/close-menu.svg" alt="close" class="w-6 h-6" />
+            </button>
+          </div>
+          <ul class="mt-[50px] space-y-3 w-[80%]">
+            <li>
+              <a href="#" class="menu-list flex items-center gap-4">
+                <img src="/public/dashboard-icon.svg" alt="dashboard-icon" />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-list flex items-center gap-4">
+                <img src="/public/performance.svg" alt="performance-icon" />
+                Performance
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-list flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                  <img src="/public/review.svg" alt="review-icon" />
+                  Review
+                </div>
+                <img src="/public/arrow-down.svg" alt="arrow-icon" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="menu-list-active list-shadow flex items-center gap-4"
+              >
+                <img src="/public/goal.svg" alt="Goals-icon" />
+                Goals
+              </a>
+            </li>
+            <li>
+              <a href="#" class="menu-list flex items-center gap-4">
+                <img src="/public/report.svg" alt="Goals-icon" />
+                Report
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Overlay to detect outside clicks -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-30"
+      ></div>
 
       <div class="px-4 lg:px-8">
         <div class="grid lg:grid-cols-10 gap-5 pt-4 2xl:pr-4 2xl:pb-4 2xl:pl-6">
           <aside class="lg:col-span-2 hidden lg:block">
-            <div class="pt-12 pl-8">
+            <div class="pt-8 xl:pt-12 xl:pl-8">
               <a href="#">
                 <img src="/public/logo.svg" alt="logo" />
               </a>
@@ -203,6 +267,7 @@
         </div>
       </div>
     </div>
+    <script src="../js/main.js"></script>
   </body>
 </html>
 <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
