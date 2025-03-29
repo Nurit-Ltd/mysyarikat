@@ -1618,6 +1618,22 @@ body {
     height: 540px;
   }
 
+  .lg\:h-\[600px\]{
+    height: 600px;
+  }
+
+  .lg\:h-\[550px\]{
+    height: 550px;
+  }
+
+  .lg\:h-\[580px\]{
+    height: 580px;
+  }
+
+  .lg\:h-\[570px\]{
+    height: 570px;
+  }
+
   .lg\:grid-cols-10{
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -1633,6 +1649,14 @@ body {
 }
 
 @media (min-width: 1280px){
+  .xl\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
   .xl\:mt-11{
     margin-top: 2.75rem;
   }
@@ -1649,12 +1673,20 @@ body {
     height: 520px;
   }
 
+  .xl\:h-\[540px\]{
+    height: 540px;
+  }
+
   .xl\:w-auto{
     width: auto;
   }
 
   .xl\:grid-cols-\[70\%_30\%\]{
     grid-template-columns: 70% 30%;
+  }
+
+  .xl\:grid-cols-7{
+    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
   .xl\:gap-3{
