@@ -588,16 +588,12 @@ video {
   left: 1rem;
 }
 
-.left-\[-150px\]{
-  left: -150px;
-}
-
-.left-\[-154px\]{
-  left: -154px;
-}
-
 .left-\[-20px\]{
   left: -20px;
+}
+
+.left-\[0px\]{
+  left: 0px;
 }
 
 .left-\[148px\]{
@@ -610,6 +606,10 @@ video {
 
 .right-5{
   right: 1.25rem;
+}
+
+.right-\[260px\]{
+  right: 260px;
 }
 
 .top-0{
@@ -628,48 +628,16 @@ video {
   top: 26px;
 }
 
+.top-\[340px\]{
+  top: 340px;
+}
+
 .top-\[500px\]{
   top: 500px;
 }
 
 .top-\[700px\]{
   top: 700px;
-}
-
-.right-\[300px\]{
-  right: 300px;
-}
-
-.right-\[280px\]{
-  right: 280px;
-}
-
-.bottom-\[40\%\]{
-  bottom: 40%;
-}
-
-.bottom-\[20\%\]{
-  bottom: 20%;
-}
-
-.top-\[450px\]{
-  top: 450px;
-}
-
-.top-\[400px\]{
-  top: 400px;
-}
-
-.top-\[340px\]{
-  top: 340px;
-}
-
-.left-\[0px\]{
-  left: 0px;
-}
-
-.right-\[260px\]{
-  right: 260px;
 }
 
 .z-0{
@@ -1284,7 +1252,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #05285e1a;
   font-size: 16px;
-  max-width: 1920px;
+  /* max-width: 1920px; */
   margin: 0 auto;
   position: relative;
   color: #05285e;
@@ -1644,6 +1612,10 @@ body {
 
   .xl\:gap-6{
     gap: 1.5rem;
+  }
+
+  .xl\:gap-\[34px\]{
+    gap: 34px;
   }
 
   .xl\:pl-8{
