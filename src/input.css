@@ -22,6 +22,7 @@ body {
   margin: 0 auto;
   position: relative;
   color: #05285e;
+  min-height: 100vh;
 }
 
 .no-scroll {
