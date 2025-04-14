@@ -49,14 +49,35 @@
               </a>
             </li>
             <li>
-              <a href="#" class="menu-list flex items-center justify-between">
+              <button class="dropdown-toggle menu-list w-full justify-between">
                 <div class="flex items-center gap-4">
-                  <img src="../public/review.svg" alt="review-icon" />
-                  Review
+                  <img
+                    src="../public/review.svg"
+                    alt="review-icon"
+                    class="w-5 h-5"
+                  />
+                  <span>Review</span>
                 </div>
-                <img src="../public/arrow-down.svg" alt="arrow-icon" />
-              </a>
+                <img
+                  src="../public/arrow-down.svg"
+                  alt="arrow-icon"
+                  class="arrow-icon w-4 h-4 transform transition-transform duration-300"
+                />
+              </button>
+              <div
+                class="dropdown-menu h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <ul class="p-4 rounded-lg shadow space-y-2">
+                  <li>
+                    <a href="#" class="menu-list">Customer Review</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-list">Client a Review</a>
+                  </li>
+                </ul>
+              </div>
             </li>
+
             <li>
               <a
                 href="#"
@@ -109,13 +130,35 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="menu-list justify-between">
+                <button
+                  class="dropdown-toggle menu-list w-full justify-between"
+                >
                   <div class="flex items-center gap-4">
-                    <img src="../public/review.svg" alt="review-icon" />
-                    Review
+                    <img
+                      src="../public/review.svg"
+                      alt="review-icon"
+                      class="w-5 h-5"
+                    />
+                    <span>Review</span>
                   </div>
-                  <img src="../public/arrow-down.svg" alt="arrow-icon" />
-                </a>
+                  <img
+                    src="../public/arrow-down.svg"
+                    alt="arrow-icon"
+                    class="arrow-icon transform transition-transform duration-300 rotate-0"
+                  />
+                </button>
+                <div
+                  class="dropdown-menu h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <ul class="p-4 rounded-lg shadow space-y-2">
+                    <li>
+                      <a href="#" class="menu-list">Customer Review</a>
+                    </li>
+                    <li>
+                      <a href="#" class="menu-list">Client a Review</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <a href="#" class="menu-list-active list-shadow">
@@ -915,14 +958,16 @@
       <div class="absolute left-[0px] top-[150px] hidden xl:block z-0">
         <img src="../public/shadow-primary-big.svg" alt="shadow-blue" />
       </div>
-      <div class="absolute bottom-0 right-[260px] hidden xl:block z-0">
-        <img src="../public/shadow-blur-bottom.svg" alt="shadow-blue" />
-      </div>
+
       <div class="absolute right-0 top-[340px] hidden xl:block z-0">
         <img src="../public/shadow-blur-right-sm.svg" alt="shadow-blue" />
       </div>
+      <div class="absolute bottom-0 right-[260px] hidden xl:block z-0">
+        <img src="../public/shadow-blur-bottom.svg" alt="shadow-blue" />
+      </div>
     </div>
     <script src="../js/main.js"></script>
+    <script src="../js/dropdown.js"></script>
   </body>
 </html>
 <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
